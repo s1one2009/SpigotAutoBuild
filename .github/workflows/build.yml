@@ -20,7 +20,7 @@ jobs:
       - name: 编译Spigot
         working-directory: build
         run: |
-          java -jar BuildTools.jar --disable-certificate-check
+          java -jar BuildTools.jar --rev 1.21 --disable-certificate-check
 
 
 
@@ -28,4 +28,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: spigot-autobuild
-          path: ./build
+          path: .\build\spigot-1.21.jar
