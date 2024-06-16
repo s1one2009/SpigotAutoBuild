@@ -19,7 +19,7 @@ jobs:
 
       - name: 编译Spigot
         run: |
-          java -jar BuildTools --disable-certificate-check
+          java -jar BuildTools.jar --disable-certificate-check
 
 
       - name: 保存构建
