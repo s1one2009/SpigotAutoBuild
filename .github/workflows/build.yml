@@ -18,8 +18,10 @@ jobs:
           java-version: '21'
 
       - name: 编译Spigot
+        working-directory: build
         run: |
           java -jar BuildTools.jar --disable-certificate-check
+
 
 
       - name: 保存构建
